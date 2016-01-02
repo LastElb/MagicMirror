@@ -1,0 +1,8 @@
+<div>
+    <div>
+        <i class="fa fa-envelope-o fa-2x"></i><span class="title3" style="margin-right: 1rem"> Mails</span>
+    </div>
+    <div ng-repeat="(account, unread) in userData.data">
+        <strong><span ng-bind="account"></span>:</strong> <span ng-bind="unread"></span> unread messages
+    </div>
+</div>

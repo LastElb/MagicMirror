@@ -1,0 +1,24 @@
+{
+  "properties": [
+    {
+      "name": "hikaricp.jdbcurl",
+      "type": "java.lang.String",
+      "description": "JDBC-Url to the database."
+    },
+    {
+      "name": "hikaricp.username",
+      "type": "java.lang.String",
+      "description": "Name of the database user."
+    },
+    {
+      "name": "hikaricp.password",
+      "type": "java.lang.String",
+      "description": "Password for the database user."
+    },
+    {
+      "name": "hikaricp.maxpoolsize",
+      "type": "java.lang.Integer",
+      "description": "Maximum connections to the database server."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<div>
+    <div>
+        <i class="fa fa-calendar-o fa-2x"></i><span class="title3" style="margin-right: 1rem"> Kalender</span>
+    </div>
+    <div ng-repeat="(calendar, events) in userData.data">
+        <div><strong><span ng-bind="calendar"></span></strong></div>
+        <div ng-repeat="event in events">
+            <span ng-bind="parseJavaDate(event.eventDateTime)|date:'HH:mm'" ></span> - <span ng-bind="event.title"></span>
+        </div>
+        <div ng-show="events.length == 0">
+            <span>No events for today</span>
+        </div>
+    </div>
+</div>
