@@ -6,6 +6,10 @@ You need a system with at least 1GB RAM, Java and MySQL.
 
 I'm using a Raspberry Pi 2 to run the whole system. The application startup takes up to 10 minutes, although the server is designed to be never restarted. Once the application started up the system load is negligible.
 
+Database settings are saved in ```src/main/java/resources/application.properties``` and can be adjusted.
+
+Copy ```scripts/raspi-monitor``` to ```/usr/sbin/``` and make the file executable. This script is used to shutdown HDMI on the Pi which may sends your monitor to sleep.
+
 ## Software design & Features
 Since I used Spring Boot the application is a server application naturally. To manage and display the aggregated and desired data, a HTML5 frontend and admin panel are provided. You can access those via
 
@@ -23,3 +27,4 @@ Once you created your personal account, you can setup the weather information an
 * ```twitter``` (planned)
 
 To set the update intervals of your data providers switch to the "Cron" tab in the backend and add a new cron action.
+
