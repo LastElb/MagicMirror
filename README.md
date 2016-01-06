@@ -28,3 +28,5 @@ Once you created your personal account, you can setup the weather information an
 
 To set the update intervals of your data providers switch to the "Cron" tab in the backend and add a new cron action.
 
+## Screenshots
+![image](https://github.com/LastElb/MagicMirror/blob/master/img/1.png)
